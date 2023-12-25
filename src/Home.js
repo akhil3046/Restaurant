@@ -7,7 +7,7 @@ import "./Home.css"; // Create a separate CSS file for Home component styles
 function Home() {
   const navigate = useNavigate();
   const [restaurants, setRestaurants] = useState([]);
-  const URL = 'https://server-y2dt.onrender.com/'
+  const URL = 'https://server-y2dt.onrender.com'
   const handleButton = () => {
     navigate("/restaraunt");
   };
