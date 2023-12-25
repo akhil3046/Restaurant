@@ -9,10 +9,10 @@ const app = express();
 
 mongoose.connect("mongodb+srv://Ajay-kumar:Ajaykumar$13@cluster0.ofmxz.mongodb.net/akhilcsd");
 // app.set("trust proxy", 1);
-app.use(cors(
+app.use(cors({
     origin:'https://restaurant-mkn3.onrender.com/',
     credentials:true,
-));
+}));
 app.use(express.json());
 app.use(bodyParser.json());
 
