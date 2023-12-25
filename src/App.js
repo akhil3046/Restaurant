@@ -27,7 +27,7 @@ function App() {
       const updatedDetails = { ...details };
       updatedDetails.questions.push(details.newQuestion);
       setDetails(updatedDetails);
-      axios.post('/new', details);
+      axios.post(URL+'/new', details);
     }
     setShow(!show);
     setDetails({...details, newQuestion: ''})
