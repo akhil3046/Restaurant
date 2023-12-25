@@ -1,0 +1,74 @@
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0; /* Set a light background color */
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form {
+  width: 60%;
+  background-color: #fff; /* Set a white background for the form */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-check {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #007BFF; /* Set a primary button color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Add a smooth hover effect */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+.btn-outline-danger {
+  background-color: #dc3545; /* Set a danger button color */
+}
+
+/* Additional Styles */
+.background-gradient {
+  background: linear-gradient(45deg, #ff5733, #ffcc00, #33cc33, #3366ff); /* Use a gradient background */
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
