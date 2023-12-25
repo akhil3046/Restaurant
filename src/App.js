@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 function App() {
+  const URL = 'https://server-y2dt.onrender.com'
   const [details, setDetails] = useState({
     name: '',
     questions: [
@@ -34,7 +35,7 @@ function App() {
 
   const handleSubmit = () => {
     if (!submitted) {
-      axios.post('/new', details);
+      axios.post(URL+'/new', details);
     }
     navigate('/');
   };
